@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 typedef void (^ReseultValueBlock) (id returnValue);
 @interface IndexViewModel : NSObject
-@property (strong, nonatomic) ReseultValueBlock resultBlock;
+@property (nonatomic,copy) ReseultValueBlock resultBlock;
 - (void)initModelWithReseultValueBlock:(ReseultValueBlock)resultBlock;
 @end
